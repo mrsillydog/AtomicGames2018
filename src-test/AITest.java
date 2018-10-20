@@ -30,5 +30,14 @@ public class AITest {
 
 		// Our second canned move is [3, 5]
 		//assertArrayEquals(new int[]{3, 5}, ai.computeMove(state));
+
+		state.setBoard(new int[][]{{0, 0, 0, 0, 0, 0, 0, 0},
+									{0, 0, 0, 0, 0, 0, 0, 0},
+									{0, 0, 0, 0, 1, 0, 0, 0},
+									{0, 0, 0, 1, 1, 0, 1, 0},
+									{0, 0, 0, 2, 2, 2, 0, 0},
+									{0, 0, 0, 0, 0, 0, 0, 0},
+									{0, 0, 0, 0, 0, 0, 0, 0},
+									{0, 0, 0, 0, 0, 0, 0, 0}});
 	}
 }
