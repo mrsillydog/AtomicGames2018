@@ -70,6 +70,10 @@ public class AI {
             currentValue = Integer.MIN_VALUE;
             for (int i = 0; i < legalMoves.size(); i++) {
                 int[][] childBoard = state.getBoard();
+                /**
+                 * Note to self: Need to undo the changes to the state of the future gameboard after reaching the end
+                 * of the recursion, to the original state of the gameboard before recursion.
+                 */
                 childBoard[legalMoves.get(i)[0]][legalMoves.get(i)[1]] = 1;
 //                GameState childState = state;
                 GameState childState = new GameState();
